@@ -1,6 +1,12 @@
 # 蜡笔效果画线 crayon-style line
 
-# API
+inspired by [fabric-brush](https://tennisonchan.github.io/fabric-brush/) but without any dependences
+
+# INSTALLATION
+
+`npm install crayon-draw --save`
+
+# HOW TO USE
 
 ```JS
 import CrayonDraw from 'crayon-draw';
