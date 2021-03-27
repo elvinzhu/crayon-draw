@@ -1,19 +1,19 @@
 import Point from "./point";
 export interface ICrayonDrawOptions {
     /**
-     * 线条宽度
+     * line width; default to 10; 线条宽度;
      */
     width: number;
     /**
-     * 线条颜色. 传递 “eraser” 会启用橡皮擦功能
+     * line color; works as an eraser when “eraser”; 线条颜色. 传递 “eraser” 会启用橡皮擦功能
      */
     color: string;
     /**
-     *  线条透明度
+     * opacity; 线条透明度
      */
     opacity: number;
     /**
-     * 点阵因子，越大🈷越密。默认 1
+     * dot density; default to 1; 点阵因子，越大越密。默认 1
      */
     inkAmount: number;
 }

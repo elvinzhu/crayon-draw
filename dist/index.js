@@ -103,13 +103,17 @@ var FreeDrawController = /** @class */ (function () {
             : canvas);
         if (options) {
             var width = options.width, color = options.color, inkAmount = options.inkAmount, opacity = options.opacity;
+            // allow empty string
+            if (typeof color === "string") {
+                this.color = color;
+            }
             if (width > 0) {
                 this.width = width;
             }
-            if (color) {
-                this.color = color;
-            }
             if (inkAmount > 0) {
+                this.inkAmount = inkAmount;
+            }
+            if (opacity > 0) {
                 this.inkAmount = inkAmount;
             }
         }
