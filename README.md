@@ -2,6 +2,8 @@
 
 inspired by [fabric-brush](https://tennisonchan.github.io/fabric-brush/) but without any dependences
 
+算法来自 [fabric-brush](https://tennisonchan.github.io/fabric-brush/) 但是没有任何依赖项
+
 # Quickstart
 
 `npm install crayon-draw --save`
@@ -31,7 +33,8 @@ instance.setWidth(10);
 
 # Note
 
-1.  set color to empty string can prevent it from drawing
+1.  set color to empty string can prevent it from drawing; 当color设置为空的时候，不画图
+2.  set color to "eraser" to make it work as an eraser; 当color传递"eraser"时是橡皮擦功能
 
 # Online Demo
 
