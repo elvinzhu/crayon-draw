@@ -18,7 +18,7 @@ import CrayonDraw from 'crayon-draw';
 
 const instance = new CrayonDraw('myCanvasId');
 
-// set line color
+// set line color;
 instance.setColor('#000000');
 // set line opacity
 instance.setOpacity(1);
@@ -28,6 +28,10 @@ instance.setInkAmount(1);
 instance.setWidth(10);
 
 ```
+
+# Note
+
+1.  set color to empty string can prevent it from drawing
 
 # Online Demo
 
