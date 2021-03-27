@@ -6,9 +6,14 @@ inspired by [fabric-brush](https://tennisonchan.github.io/fabric-brush/) but wit
 
 `npm install crayon-draw --save`
 
+OR
+
+`<script src="https://cdn.jsdelivr.net/npm/crayon-draw@1.0.0/dist/crayon-draw.min.js"></script>`
+
 # HOW TO USE
 
 ```JS
+
 import CrayonDraw from 'crayon-draw';
 
 const instance = new CrayonDraw('myCanvasId');
