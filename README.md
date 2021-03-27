@@ -2,7 +2,7 @@
 
 inspired by [fabric-brush](https://tennisonchan.github.io/fabric-brush/) but without any dependences
 
-# INSTALLATION
+# Quickstart
 
 `npm install crayon-draw --save`
 
@@ -10,7 +10,7 @@ OR
 
 `<script src="https://cdn.jsdelivr.net/npm/crayon-draw@1.0.0/dist/crayon-draw.min.js"></script>`
 
-# HOW TO USE
+# How to use
 
 ```JS
 
@@ -29,6 +29,10 @@ instance.setWidth(10);
 
 ```
 
-# LICENSE
+# Online Demo
+
+[click to jump](https://elvinzhu.github.io/crayon-draw/)
+
+# License
 
 MIT[@elvin](https://github.com/elvinzhu)
