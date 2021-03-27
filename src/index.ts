@@ -3,19 +3,19 @@ import * as util from "./utils";
 
 export interface ICrayonDrawOptions {
   /**
-   * 线条宽度
+   * line width; default to 10; 线条宽度;
    */
   width: number;
   /**
-   * 线条颜色. 传递 “eraser” 会启用橡皮擦功能
+   * line color; works as an eraser when “eraser”; 线条颜色. 传递 “eraser” 会启用橡皮擦功能
    */
   color: string;
   /**
-   *  线条透明度
+   * opacity; 线条透明度
    */
   opacity: number;
   /**
-   * 点阵因子，越大🈷越密。默认 1
+   * dot density; default to 1; 点阵因子，越大越密。默认 1
    */
   inkAmount: number;
 }
@@ -43,13 +43,17 @@ export default class FreeDrawController {
 
     if (options) {
       const { width, color, inkAmount, opacity } = options;
+      // allow empty string
+      if (typeof color === "string") {
+        this.color = color;
+      }
       if (width > 0) {
         this.width = width;
       }
-      if (color) {
-        this.color = color;
-      }
       if (inkAmount > 0) {
+        this.inkAmount = inkAmount;
+      }
+      if (opacity > 0) {
         this.inkAmount = inkAmount;
       }
     }
