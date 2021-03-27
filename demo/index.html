@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagemin demo</title>
+    <script src="../dist/crayon-draw.min.js"></script>
+  </head>
+
+  <body>
+    <p style="font-size: 14pxs">
+      width: <span id="widthValue">10</span>
+      <input
+        type="range"
+        max="50"
+        min="5"
+        step="1"
+        value="10"
+        onchange="widthValue.innerHTML=this.value;instance.setWidth(+this.value)"
+      />
+      inkAmount: <span id="intAmountValue">1</span>
+      <input
+        type="range"
+        max="10"
+        min="1"
+        step="1"
+        value="1"
+        onchange="intAmountValue.innerHTML=this.value;instance.setInkAmount(+this.value)"
+      />
+    </p>
+    <p>
+      color: <span id="colorValue">#000000</span
+      ><input
+        type="color"
+        onchange="colorValue.innerHTML=this.value;instance.setColor(this.value)"
+      />
+      opacity:
+      <span id="opacityValue">1</span>
+      <input
+        type="range"
+        max="1"
+        min="0"
+        step="0.1"
+        value="1"
+        onchange="opacityValue.innerHTML=this.value;instance.setOpacity(+this.value)"
+      />
+    </p>
+    <hr />
+    <canvas
+      id="myCanvas"
+      style="width: 90vw; height: 375px; border: solid 1px #999"
+    ></canvas>
+    <script>
+      const instance = new CrayonDraw();
+      instance.initialize("myCanvas");
+    </script>
+  </body>
+</html>
