@@ -28,6 +28,8 @@ instance.setOpacity(1);
 instance.setInkAmount(1);
 // set line width
 instance.setWidth(10);
+// unbind event
+instance.destroy();
 
 ```
 
